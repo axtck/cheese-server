@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cheese-server", "cheese-server\cheese-server.csproj", "{7C61A4EC-085A-4ABD-99A1-F189F248644F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{FDED0275-F25E-4A25-A630-03B6CE02F259}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C61A4EC-085A-4ABD-99A1-F189F248644F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C61A4EC-085A-4ABD-99A1-F189F248644F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C61A4EC-085A-4ABD-99A1-F189F248644F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C61A4EC-085A-4ABD-99A1-F189F248644F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDED0275-F25E-4A25-A630-03B6CE02F259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDED0275-F25E-4A25-A630-03B6CE02F259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDED0275-F25E-4A25-A630-03B6CE02F259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDED0275-F25E-4A25-A630-03B6CE02F259}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A373D0A-8074-4D9B-9C43-9A6680D95170}
+	EndGlobalSection
+EndGlobal
