@@ -18,7 +18,6 @@ namespace cheese_server
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            // some comment
         }
 
         public IConfiguration Configuration { get; }
