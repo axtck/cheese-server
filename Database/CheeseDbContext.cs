@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Database
 {
-    class CheeseDbContext : DbContext
+    public class CheeseDbContext : DbContext
     {
         public DbSet<Player> Players { get; set; }
         public DbSet<Game> Games { get; set; }
