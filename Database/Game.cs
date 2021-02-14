@@ -12,6 +12,11 @@ namespace Database
         [Key]
         public Guid GameId { get; set; }
 
+        public DateTime Time { get; set; }
+
+        [Required, MaxLength(50)]
+        public string Name { get; set; }
+
         [Required]
         public string PGN { get; set; }
     }

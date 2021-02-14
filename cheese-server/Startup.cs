@@ -31,21 +31,20 @@ namespace cheese_server
             // add dbcontext
             services.AddDbContext<CheeseDbContext>();
 
-            // cors
+            // add CORS policy 
             services.AddCors(c =>
             {
-                c.AddPolicy("AllowOrigin", builder =>
-                {
-                    builder.AllowAnyOrigin()
+                c.AddPolicy("AllowOrigin", builder => builder
+                        .AllowAnyOrigin()
                         .AllowAnyMethod()
-                        .AllowAnyHeader();
-                });
+                        .AllowAnyHeader());
             });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            // use CORS
             app.UseCors("AllowOrigin");
 
             if (env.IsDevelopment())

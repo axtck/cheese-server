@@ -78,7 +78,6 @@ namespace cheese_server.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<Game>> PostGame(Game game)
         {
             _context.Games.Add(game);
