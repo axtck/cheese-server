@@ -27,7 +27,7 @@ namespace cheese_server.ViewModels
 
             this.GameId = game.GameId;
             this.Name = game.Name;
-            this.Time = DateTime.Now;
+            this.Time = game.Time;
             this.PGN = game.PGN;
         }
 
