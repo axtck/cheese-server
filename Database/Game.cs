@@ -12,15 +12,7 @@ namespace Database
         [Key]
         public Guid GameId { get; set; }
 
-        [MaxLength(40), Required]
-        public string Name { get; set; }
-
-        public List<Move> Moves { get; set; }
-
         [Required]
-        public Guid PlayerId { get; set; }
-
-        [ForeignKey("PlayerId")]
-        public Player Player { get; set; }
+        public string PGN { get; set; }
     }
 }

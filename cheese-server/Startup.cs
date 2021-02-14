@@ -1,3 +1,4 @@
+using Database;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,11 +27,27 @@ namespace cheese_server
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            // add dbcontext
+            services.AddDbContext<CheeseDbContext>();
+
+            // cors
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors("AllowOrigin");
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
